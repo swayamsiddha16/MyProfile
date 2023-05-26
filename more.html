@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    .skills {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Add background color to create bubble effect */
+        position: fixed; /* Fix the position */
+        z-index: 999; /* Ensure the bubbles appear above other elements */
+        animation-name: floatBubble; /* Add animation for floating effect */
+        animation-duration: 3s; /* Adjust animation duration as per your needs */
+        animation-timing-function: ease-in-out; /* Adjust animation timing as per your needs */
+        animation-iteration-count: infinite; /* Make the animation repeat indefinitely */
+    }
+
+    .myproj {
+        height: 50px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: antiquewhite;
+        position: fixed; /* Fix the position */
+        z-index: 999; /* Ensure the bubbles appear above other elements */
+        animation-name: floatBubble; /* Add animation for floating effect */
+        animation-duration: 3s; /* Adjust animation duration as per your needs */
+        animation-timing-function: ease-in-out; /* Adjust animation timing as per your needs */
+        animation-iteration-count: infinite; /* Make the animation repeat indefinitely */
+    }
+
+    @keyframes floatBubble {
+        0% {
+            transform: translateY(-50%);
+        }
+        50% {
+            transform: translateY(-55%);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    body {
+        background-image: url("./background4.jpg");
+        background-color: antiquewhite;
+        background-size: cover;
+    }
+
+    .gap {
+        height: 30px;
+    }
+
+    /* Add spacing between the circles and buttons */
+    .skills:not(:last-child),
+    .myproj:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    /* Custom positions for each circle */
+    .position-1 {
+        top: 30%;
+        right: 20px;
+
+border-color:black;    }
+
+    .position-2 {
+        top: 50%;
+        right: 120px;
+        border-color:black;
+    }
+
+    .position-3 {
+        top: 20%;
+        right: 220px;
+        border-color:black;
+    }
+    
+    .position-4 {
+        top: 40%;
+        right: 320px;
+        border-color:black;
+    }
+
+    .position-5 {
+        top: 10%;
+        right: 420px;
+        border-color:black;
+    }
+
+    .position-6 {
+        top: 80%;
+        right: 300px;
+        border-color:black;
+    }
+
+    .position-7 {
+        top: 70%;
+        right: 620px;
+        border-color:black;
+    }
+
+    .position-8 {
+        top: 35%;
+        right: 600px;
+        border-color:black;
+    }
+
+    .position-10 {
+        top: 10%;
+        right: 100px;
+       border-color: blueviolet;
+    }
+
+    .place-1 {
+        bottom: 30%;
+       left: 20px;
+    }
+
+    .place-2 {
+        bottom: 50%;
+       left: 120px;
+    }
+
+    .place-3 {
+        bottom: 20%;
+       left: 220px;
+    }
+    
+    .place-4{
+        bottom: 40%;
+       left: 320px;
+    }
+
+    .place-5 {
+        top: 10%;
+       left: 420px;
+    }
+
+    .place-6{
+        top: 10%;
+       left: 50px;
+       border-color: blueviolet;
+    }
+
+    /* Add more positions as needed */
+
+</style>
+
+<div>
+    <button class="myproj place-6">Deployed link</button>
+</div>
+
+<div>
+    <a href="https://animated-stardust-fd452d.netlify.app/"><button class="myproj place-1">Image Selector</button></a>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    
+    <a href="https://virtual-classroom-ssdp.netlify.app/"><button class="myproj place-2">Virtual Classroom</button></a>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <a href="https://elegant-semifreddo-c21af7.netlify.app/"><button class="myproj place-3">Dynamic Video Player</button></a>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <a href="google.com"><button class="myproj place-4">Dynamic Music Player</button></a>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <a href="google.com"><button class="myproj place-5">MERN stack-with React</button></a>
+</div>
+
+<div>
+    <button class="skills position-10">Skill set</button>
+</div>
+<div>
+    <p class="skills position-7">python</p>
+    <p class="skills position-8">JavaScript</p>
+    <p class="skills position-1">HTML</p>
+    <p class="skills position-2">CSS</p>
+    <p class="skills position-3">ReactJS</p>
+    <p class="skills position-4">NodeJS</p>
+    <p class="skills position-5">ExpressJS</p>
+    <p class="skills position-6">FastAPI</p>
+</div>
+
+</body>
+</html>
+

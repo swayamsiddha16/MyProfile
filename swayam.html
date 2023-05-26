@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar Styles */
+        .myimage {
+            background-image: url('./background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 200vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar li a:hover {
+            color: #ddd;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            background-color: #f5f5f5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-section p {
+            color: #777;
+        }
+
+        /* Animated Button Styles */
+        .animated-button {
+            display: inline-block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            padding: 15px 25px;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .animated-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #666;
+            transition: left 0.3s ease;
+        }
+
+        .animated-button:hover {
+            background-color: #555;
+        }
+
+        .animated-button:hover:before {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="myimage"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+  
+
+    <!-- Animated Button -->
+    <!-- Animated Button -->
+<a href="more.html" class="animated-button">Click here to view more</a>
+
+</body>
+</html>
+

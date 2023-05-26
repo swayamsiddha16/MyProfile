@@ -1,0 +1,87 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex #a28ad1 #5C469C #a28ad1 1123*/
+body{
+  margin: 0;
+  padding: 0;
+}
+.left-panel{
+  height: 1400px;
+  width : 320px;
+  float: left;
+  background-color:#867070 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-panel{
+  height: 1400px;
+  width : 474px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  float: left;
+  background-color:#E4D0D0;
+  display: flex;
+  flex-direction: column;
+}
+.profile-image
+{
+  margin-top: 40px;
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+}
+.details-holder{
+  margin-top: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: white;
+  line-height: 10px;
+}
+.gap{
+  height: 10px;
+}
+.gap2{
+  margin-left: 60px;
+}
+.name{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+
+}
+.r-panel-holder
+{
+  margin-top: 0;
+  padding-top: 0;
+  height: 1123px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+hr{
+  margin: 0;
+}
+
+.headings{
+  margin: 0;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  background-color:#D5B4B4 ;
+}
+
+table , th, td{
+  border: 1px solid black;
+  font-size: x-small;
+  text-align: center;
+}
+table{
+  margin-top: 20px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+
